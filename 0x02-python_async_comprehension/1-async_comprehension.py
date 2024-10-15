@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-'''A coroutine that uses asynchronous comprehension to gather random numbers.'''
+'''Module for performing asynchronous comprehension to gather numbers.'''
 from typing import List
-import asyncio
-from 0-async_generator import async_generator
+from importlib import import_module as using
+
+# Importing the async_generator function from the specified module
+async_generator = using('0-async_generator').async_generator
 
 async def async_comprehension() -> List[float]:
-    '''Collects 10 random numbers using async comprehension over async_generator.'''
-    return [number async for number in async_generator()]
+    '''Collects 10 random numbers using asynchronous comprehension over async_generator.'''
+    return [num async for num in async_generator()]
