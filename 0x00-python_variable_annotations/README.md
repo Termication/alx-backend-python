@@ -8,7 +8,7 @@ Table of Contents
     Duck Typing in Python
     Validating Code with Mypy
 
-# Type Annotations in Python 3
+## Type Annotations in Python 3
 
 Type annotations allow you to explicitly state the expected data types of variables, function parameters, and return values. This helps improve code readability and maintainability. Type annotations do not affect the runtime behavior of your code but can be used for static type checking.
 Example of Type Annotations
